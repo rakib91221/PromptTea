@@ -1,16 +1,15 @@
 # PromptTea: Let Prompts Tell TeaCache the Optimal Threshold
 
-[![arXiv](https://img.shields.io/badge/Arxiv-2411.19108-b31b1b.svg?logo=arXiv)](http://arxiv.org/abs/2507.06739) 
+[![arXiv](https://img.shields.io/badge/Arxiv-2507.06739-b31b1b.svg?logo=arXiv)](http://arxiv.org/abs/2507.06739) 
 
 ![cover img](./asset/visual.jpg)
 
 ## 🫖 Introduction 
 This repository contains the official implementation of our paper: PromptTea: Let Prompts Tell TeaCache the Optimal Threshold
 
-## 🔥 Latest News
-🔔 **[Latest News](#latest-news)**  
+## 🔥 Latest News 
 - If you like our project, please give us a star ⭐ on GitHub for the latest update.  
-- **[2025/07/10]** 🎉 Submitted to arXiv for review.  
+- **[2025/07/10]** 🎉 Submitted to [arXiv](http://arxiv.org/abs/2507.06739) for review.  
 - **[2025/07/10]** 🔥 Released open-source code of PromptTea. Support [CogVideoX1.5](https://github.com/THUDM/CogVideo), [HunyuanVideo](https://github.com/Tencent/HunyuanVideo) and [Wan2.1](https://github.com/Wan-Video/Wan2.1).  
 
 ## 🎉 Supported Models 
