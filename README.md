@@ -2,7 +2,7 @@
 
 [![arXiv](https://img.shields.io/badge/Arxiv-2411.19108-b31b1b.svg?logo=arXiv)](http://arxiv.org/abs/2507.06739) 
 
-![cover img](./asset\visual.jpg)
+![cover img](./asset/visual.jpg)
 
 ## 🫖 Introduction 
 This repository contains the official implementation of our paper: PromptTea: Let Prompts Tell TeaCache the Optimal Threshold
