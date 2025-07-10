@@ -15,7 +15,7 @@ This repository contains the official implementation of our paper: PromptTea: Le
 
 ## 🎉 Supported Models 
 **Text to Video**
-- [PromptTea4CogVideoX1.5](./PrmoptTea4CogVideoX1.5/README.md)
+- [PromptTea4CogVideoX1.5](./PromptTea4CogVideoX1.5/README.md)
 - [PromptTea4HunyuanVideo](./PromptTea4HunyuanVideo/README.md)
 - [PromptTea4Wan2.1](./PromptTea4Wan2.1/README.md)
 
