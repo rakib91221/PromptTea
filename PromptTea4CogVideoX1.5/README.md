@@ -41,4 +41,4 @@ python3 prompttea_smaple.py \
 
 ## Acknowledgements
 
-We would like to thank the contributors to the [CogVideoX](https://github.com/THUDM/CogVideo) and [Diffusers](https://github.com/huggingface/diffusers).
+We would like to thank the contributors to the [CogVideoX](https://github.com/THUDM/CogVideo), [Diffusers](https://github.com/huggingface/diffusers) and [TeaCache](https://github.com/ali-vilab/TeaCache/tree/main).
