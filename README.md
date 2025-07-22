@@ -26,14 +26,11 @@ This repository is built based on [TeaCache](https://github.com/ali-vilab/TeaCac
 ## 📚 Citation
 
 ```bibtex
-@misc{huang2025prompttea,
-      title={PromptTea: Let Prompts Tell TeaCache the Optimal Threshold},
-      author={Zishen Huang and Chunyu Yang and Mengyuan Ren},
-      year={2025},
-      eprint={2507.06739},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={http://arxiv.org/abs/2507.06739},
+@article{huang2025prompttea,
+  title={PromptTea: Let Prompts Tell TeaCache the Optimal Threshold},
+  author={Huang, Zishen and Yang, Chunyu and Ren, Mengyuan},
+  journal={arXiv preprint arXiv:2507.06739},
+  year={2025}
 }
 ```
 ## 📜 License
