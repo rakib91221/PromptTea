@@ -8,7 +8,8 @@
 This repository contains the official implementation of our paper: PromptTea: Let Prompts Tell TeaCache the Optimal Threshold
 
 ## 🔥 Latest News 
-- If you like our project, please give us a star ⭐ on GitHub for the latest update.  
+- If you like our project, please give us a star ⭐ on GitHub for the latest update.
+- **[2025/07/30]** 🔥 Support multi-GPUs parallel inference for the [Wan2.1](https://github.com/Wan-Video/Wan2.1).  
 - **[2025/07/10]** 🎉 Submitted to [arXiv](http://arxiv.org/abs/2507.06739) for review.  
 - **[2025/07/10]** 🔥 Released open-source code of PromptTea. Support [CogVideoX1.5](https://github.com/THUDM/CogVideo), [HunyuanVideo](https://github.com/Tencent/HunyuanVideo) and [Wan2.1](https://github.com/Wan-Video/Wan2.1).  
 
@@ -21,7 +22,7 @@ This repository contains the official implementation of our paper: PromptTea: Le
 
 ## 💐 Acknowledgement 
 
-This repository is built based on [TeaCache](https://github.com/ali-vilab/TeaCache/tree/main), [FasterCache](https://github.com/Vchitect/FasterCache), [Diffusers](https://github.com/huggingface/diffusers), [CogVideoX](https://github.com/THUDM/CogVideo), [HunyuanVideo](https://github.com/Tencent/HunyuanVideo) and [Wan2.1](https://github.com/Wan-Video/Wan2.1). Thanks for their contributions!
+This repository is built based on [TeaCache](https://github.com/ali-vilab/TeaCache/tree/main), [TeaCache-xDit](https://github.com/MingXiangL/Teacache-xDiT), [FasterCache](https://github.com/Vchitect/FasterCache), [Diffusers](https://github.com/huggingface/diffusers), [CogVideoX](https://github.com/THUDM/CogVideo), [HunyuanVideo](https://github.com/Tencent/HunyuanVideo) and [Wan2.1](https://github.com/Wan-Video/Wan2.1). Thanks for their contributions!
 
 ## 📚 Citation
 
