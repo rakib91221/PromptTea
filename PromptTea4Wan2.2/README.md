@@ -18,7 +18,7 @@ Follow [Wan2.2](https://github.com/Wan-Video/Wan2.2) to clone the repo and finis
 For T2V with 14B model, you can use the following command:
 
 ```bash
-python prompttea_sample.py  --task t2v-A14B --size 1280*720 --ckpt_dir ./Wan2.2-T2V-A14B --offload_model True --convert_model_dtype --prompt "Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage." --use_pca
+python prompttea_sample.py  --task t2v-A14B --size 1280*720 --ckpt_dir ./Wan2.2-T2V-A14B --offload_model True --t5_cpu --convert_model_dtype --prompt "Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage." --use_pca
 ```
 
 ## Acknowledgements
