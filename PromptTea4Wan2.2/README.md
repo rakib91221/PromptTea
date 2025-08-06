@@ -1,7 +1,7 @@
 <!-- ## **PromptTea4Wan2.1** -->
 # PromptTea4Wan2.1
 
-https://github.com/user-attachments/assets/717ad415-ba3e-4962-82b0-c4fe4e6a2ba4
+https://github.com/user-attachments/assets/0c665733-a8a6-401d-9791-8dba6af54bdf
 
 ## 📈 Inference Latency Comparisons on a Single H100
 
