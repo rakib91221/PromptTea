@@ -6,7 +6,7 @@ https://github.com/user-attachments/assets/0c665733-a8a6-401d-9791-8dba6af54bdf
 ## 📈 Inference Latency Comparisons on a Single H100
 
 | Method | Speedup ↑ | Latency (min) ↓ |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | **Wan2.2 (81frames, 1280×720)** |  1x | 28 |
 | Ours (PromptTea) | 1.65x~2.07× | 13.5~17 |
 
