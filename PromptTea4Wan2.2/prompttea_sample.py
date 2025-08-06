@@ -255,6 +255,14 @@ def t2v_generate(self,
         arg_c = {'context': context, 'seq_len': seq_len, 'is_cond':True}
         arg_null = {'context': context_null, 'seq_len': seq_len, 'is_cond':False}
 
+        # init
+        self.low_noise_model.previous_residual_cond=None
+        self.low_noise_model.previous_residual_uncond=None
+        self.low_noise_model.previous_e0 = None
+        self.high_noise_model.previous_residual_cond=None
+        self.high_noise_model.previous_residual_uncond=None
+        self.high_noise_model.previous_e0 = None
+
         for i, t in enumerate(tqdm(timesteps)):
             latent_model_input = latents
             timestep = [t]
@@ -301,7 +309,9 @@ def t2v_generate(self,
         if self.rank == 0:
             videos = self.vae.decode(x0)
 
-    del noise, latents
+    del noise, latents, 
+    self.low_noise_model.previous_residual_cond, self.low_noise_model.previous_residual_uncond, self.low_noise_model.previous_e0, 
+    self.high_noise_model.previous_residual_cond, self.high_noise_model.previous_residual_uncond, self.low_noise_model.previous_e0,
     del sample_scheduler
     if offload_model:
         gc.collect()
