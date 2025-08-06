@@ -254,14 +254,9 @@ def t2v_generate(self,
 
         arg_c = {'context': context, 'seq_len': seq_len, 'is_cond':True}
         arg_null = {'context': context_null, 'seq_len': seq_len, 'is_cond':False}
-
         # init
-        self.low_noise_model.previous_residual_cond=None
-        self.low_noise_model.previous_residual_uncond=None
-        self.low_noise_model.previous_e0 = None
-        self.high_noise_model.previous_residual_cond=None
-        self.high_noise_model.previous_residual_uncond=None
-        self.high_noise_model.previous_e0 = None
+        # reset_model_attributes(self.high_noise_model)
+        # reset_model_attributes(self.low_noise_model)
 
         for i, t in enumerate(tqdm(timesteps)):
             latent_model_input = latents
@@ -295,11 +290,7 @@ def t2v_generate(self,
                 generator=seed_g)[0]
             latents = [temp_x0.squeeze(0)]
         self.low_step = -1
-        self.low_noise_model.previous_residual_cond=None
-        self.low_noise_model.previous_residual_uncond=None
-        self.low_noise_model.previous_e0 = None
-        self.high_noise_model.previous_residual_cond=None
-        self.high_noise_model.previous_residual_uncond=None
+        
 
         x0 = latents
         if offload_model:
@@ -309,9 +300,11 @@ def t2v_generate(self,
         if self.rank == 0:
             videos = self.vae.decode(x0)
 
-    del noise, latents, 
-    self.low_noise_model.previous_residual_cond, self.low_noise_model.previous_residual_uncond, self.low_noise_model.previous_e0, 
-    self.high_noise_model.previous_residual_cond, self.high_noise_model.previous_residual_uncond, self.low_noise_model.previous_e0,
+    del noise, latents
+    # 清理高低噪声模型
+    self.low_noise_model.previous_residual_cond=None
+    self.low_noise_model.previous_residual_uncond=None
+    self.low_noise_model.previous_e0 = None
     del sample_scheduler
     if offload_model:
         gc.collect()
@@ -426,7 +419,7 @@ def prompttea_forward(
                     should_calc_cond = True
                     self.accumulated_rel_l1_distance = 0
             self.should_calc = should_calc_cond
-            self.previous_e0 = modulated_inp.clone()
+            self.previous_e0 = modulated_inp
         
         # uncond
         else:
@@ -931,6 +924,8 @@ def generate(args):
             normalize=True,
             value_range=(-1, 1))
     del video
+    gc.collect()
+    torch.cuda.empty_cache()
 
     torch.cuda.synchronize()
     if dist.is_initialized():
