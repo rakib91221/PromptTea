@@ -9,6 +9,7 @@ This repository contains the official implementation of our paper: PromptTea: Le
 
 ## 🔥 Latest News 
 - If you like our project, please give us a star ⭐ on GitHub for the latest update.
+- **[2025/07/30]** 🔥 Support [Wan2.2](https://github.com/Wan-Video/Wan2.2).
 - **[2025/07/30]** 🔥 Support multi-gpu parallel inference for the [Wan2.1](https://github.com/Wan-Video/Wan2.1).  
 - **[2025/07/10]** 🎉 Submitted to [arXiv](http://arxiv.org/abs/2507.06739) for review.  
 - **[2025/07/10]** 🔥 Released open-source code of PromptTea. Support [CogVideoX1.5](https://github.com/THUDM/CogVideo), [HunyuanVideo](https://github.com/Tencent/HunyuanVideo) and [Wan2.1](https://github.com/Wan-Video/Wan2.1).  
@@ -18,11 +19,12 @@ This repository contains the official implementation of our paper: PromptTea: Le
 - [PromptTea4CogVideoX1.5](./PromptTea4CogVideoX1.5/README.md)
 - [PromptTea4HunyuanVideo](./PromptTea4HunyuanVideo/README.md)
 - [PromptTea4Wan2.1](./PromptTea4Wan2.1/README.md)
+- [PromptTea4Wan2.2](./PromptTea4Wan2.2/README.md)
 
 
 ## 💐 Acknowledgement 
 
-This repository is built based on [TeaCache](https://github.com/ali-vilab/TeaCache/tree/main), [TeaCache-xDit](https://github.com/MingXiangL/Teacache-xDiT), [FasterCache](https://github.com/Vchitect/FasterCache), [Diffusers](https://github.com/huggingface/diffusers), [CogVideoX](https://github.com/THUDM/CogVideo), [HunyuanVideo](https://github.com/Tencent/HunyuanVideo) and [Wan2.1](https://github.com/Wan-Video/Wan2.1). Thanks for their contributions!
+This repository is built based on [TeaCache](https://github.com/ali-vilab/TeaCache/tree/main), [TeaCache-xDit](https://github.com/MingXiangL/Teacache-xDiT), [FasterCache](https://github.com/Vchitect/FasterCache), [Diffusers](https://github.com/huggingface/diffusers), [CogVideoX](https://github.com/THUDM/CogVideo), [HunyuanVideo](https://github.com/Tencent/HunyuanVideo), [Wan2.1](https://github.com/Wan-Video/Wan2.1) and [Wan2.2](https://github.com/Wan-Video/Wan2.2). Thanks for their contributions!
 
 ## 📚 Citation
 
